@@ -1,0 +1,20 @@
+.list {
+  column-count: 4;
+  column-gap: 15px;
+}
+
+.item {
+  display: inline-block;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+.list:has(.item:nth-child(2)):not(:has(.item:nth-child(3))) {
+  column-count: 2;
+  width: auto;
+
+  .item {
+    display: block;
+  }
+}
