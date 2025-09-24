@@ -1,4 +1,4 @@
-import './project_list.css';
+import './project-list.css';
 
 export const ProjectList = ({ projects }) => {
   return (
